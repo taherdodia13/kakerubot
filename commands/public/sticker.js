@@ -29,15 +29,15 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
         member.updateOne({ _id: senderJid }, { $inc: { dmLimit: -1 } });
     }
 
-    let packName = "eva";
-    let authorName = "eva";
+    let packName = "kakeru";
+    let authorName = "kakeru";
 
     const isPackIncluded = args.includes('pack');
     const isAuthorIncluded = args.includes('author');
 
     if (args.includes('nometadata') === false) {
-        packName = isPackIncluded ? evv.split('pack')[1].split('author')[0] : 'eva';
-        authorName = isAuthorIncluded ? evv.split('author')[1].split('pack')[0] : 'eva';
+        packName = isPackIncluded ? evv.split('pack')[1].split('author')[0] : 'kakeru';
+        authorName = isAuthorIncluded ? evv.split('author')[1].split('pack')[0] : 'kakeru';
     }
 
     const outputOptions = args.includes("crop") || args.includes("c")

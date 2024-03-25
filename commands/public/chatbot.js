@@ -54,4 +54,4 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
     }
 }
 
-module.exports.command = () => ({ cmd: ["eva", "gpt"], handler });
+module.exports.command = () => ({ cmd: ["kakeru", "gpt"], handler });

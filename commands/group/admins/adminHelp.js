@@ -44,7 +44,7 @@ ${readMore}
     _Set group welcome message!_
     _Auto set my bot "Welcome {user} to {group Name}."_
     _Set message will show in next line by default._
-    eg: Welcome Eva to EvaTest
+    eg: Welcome Kakeru to KakeruTest
         Give respect and take respect!
     ${prefix}welcome reset 
     _Reset welcome message!_

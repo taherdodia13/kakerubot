@@ -14,33 +14,6 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
     const { prefix, sendMessageWTyping } = msgInfoObj;
     let horo_text = ['aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces']
 
-    // const sections = [{
-    //     title: "Categories",
-    //     rows: [
-    //         { title: `${prefix}horo aries`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo taurus`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo gemini`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo cancer`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo leo`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo virgo`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo libra`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo scorpio`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo sagittarius`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo capricorn`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo aquarius`, rowId: "eva", description: "" },
-    //         { title: `${prefix}horo pisces`, rowId: "eva", description: "" },
-    //     ]
-    // }]
-
-    // const listMessage = {
-    //     text: "Horoscope",
-    //     footer: "Send by eva",
-    //     buttonText: "Click here",
-    //     viewOnce: true,
-    //     sections
-    // }
-    // if (!args[0]) return sock.sendMessage(from, listMessage);
-
     if (!args[0]) return sock.sendMessage(from, { text: "Please provide right horo : " + horo_text.join("\n") }, { quoted: msg });
 
     let horoscope = args[0];

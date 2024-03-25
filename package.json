@@ -15,7 +15,7 @@
 		"start": "node index.js"
 	},
 	"keywords": [],
-	"author": "mahesh",
+	"author": "Taher Dodia",
 	"license": "MIT",
 	"dependencies": {
 		"@adiwajshing/baileys": "github:jacktheboss220/Baileys-New",

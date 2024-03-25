@@ -55,7 +55,7 @@ ${readMore}
 *${prefix}steal*
         _Send sticker with bot metadata_
     *Examples:*
-        _${prefix}steal this is eva_
+        _${prefix}steal this is kakeru_
         
 *${prefix}sets*
         _Set custom steal text_
@@ -163,7 +163,7 @@ ${readMore}
 
 *${prefix}ud*
     _Show Meaning of your name_
-    eg:${prefix}ud Mahesh
+    eg:${prefix}ud Taher
 
 *${prefix}dict*
     _A classic Dictionary_
@@ -186,7 +186,7 @@ ${readMore}
         _pack_ - Add metadata in sticker!
         _nometadata_ - Remove all metadata from sticker!
     *Examples:*
-        _${prefix}sticker pack eva author jacktheboss220_
+        _${prefix}sticker pack kakeru author jacktheboss220_
         _${prefix}sticker crop_
         _${prefix}sticker nometadata_
 `;

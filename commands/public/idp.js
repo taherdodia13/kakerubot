@@ -37,7 +37,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
                 sendMessageWTyping(from,
                     {
                         image: { url: res.data.graphql.user.profile_pic_url_hd },
-                        caption: `Sent by eva`
+                        caption: `Sent by kakeru`
                     },
                     { quoted: msg }
                 )
@@ -45,17 +45,6 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
                 sendMessageWTyping(from, { text: `*No Profile Picture Found*` }, { quoted: msg })
             }
         }).catch(async (err) => {
-            //     await ig.fetchUser(prof).then(async (res) => {
-            //         await sendMessageWTyping(from,
-            //             {
-            //                 image: { url: res.hd_profile_pic_url_info.url },
-            //                 caption: `Sent by eva`
-            //             },
-            //             { quoted: msg }
-            //         )
-            //         ownerSend(JSON.stringify(res, "", 2, 100));
-            //     }).catch((err) => {
-            //         console.log("Error", err);
             sendMessageWTyping(from, { text: err.toString() }, { quoted: msg });
             //     });
         });
